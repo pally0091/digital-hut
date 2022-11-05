@@ -16,11 +16,13 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Home></Home>
+          element: <Home></Home>,
+          loader: ()=> fetch('https://dummyjson.com/products/categories')
         },
         {
           path: '/home',
-          element: <Home></Home>
+          element: <Home></Home>,
+          loader: ()=> fetch('https://dummyjson.com/products/categories')
         },
         {
           path: '/products',

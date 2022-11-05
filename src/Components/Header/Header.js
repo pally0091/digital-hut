@@ -44,7 +44,7 @@ const Header = () => {
           title="Company"
           className="inline-flex items-center lg:mx-auto"
         >
-          <h1 className="text-2xl text-indigo-900 font-bold">Digital</h1>
+          <h1 className="text-4xl text-indigo-900 font-bold">Digital</h1>
           <span className="ml-2 text-2xl font-light tracking-wide text-gray-800 uppercase">
             HUT
           </span>
