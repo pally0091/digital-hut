@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   const categories = useLoaderData()
-  console.log(categories)
+  
   return (
     <div className="p-5 ">
       <div>
@@ -42,7 +42,7 @@ const Home = () => {
         
       </div>
       <div className="lg:w-2/12 sm:w-full border-2 mx-auto rounded shadow-md mt-10 hover:bg-indigo-400 p-2">
-      <button className="w-full text-center"><Link to='/products'>Browse Products -->> </Link></button>
+      <button className="w-full text-center"><Link to='/category/laptops'>Browse Products -->> </Link></button>
       </div>
     </div>
   );

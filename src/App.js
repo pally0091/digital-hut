@@ -25,8 +25,14 @@ function App() {
           loader: ()=> fetch('https://dummyjson.com/products/categories')
         },
         {
-          path: '/products',
-          element: <Products></Products>
+          path: '/category/smartphones',
+          element: <Products></Products>,
+          loader : ()=> fetch("https://dummyjson.com/products/category/smartphones")
+        },
+        {
+          path: '/category/:id',
+          element: <Products></Products>,
+          loader: ({params}) => fetch(`https://dummyjson.com/products/category/${params.id}`)
         },
         {
           path: '/about',
