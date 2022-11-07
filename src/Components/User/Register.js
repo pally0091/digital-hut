@@ -8,6 +8,7 @@ const Register = () => {
       <br />
       <input
         type="text"
+        name="name"
         placeholder="Your Name"
         className="bg-slate-200 p-2 rounded mt-2 w-full"
       ></input>
@@ -15,6 +16,7 @@ const Register = () => {
       <br />
       <input
         type="email"
+        name="email"
         placeholder="Your Email"
         className="bg-slate-200 p-2 rounded mt-2 w-full"
       ></input>
@@ -22,6 +24,7 @@ const Register = () => {
       <br />
       <input
         type="password"
+        name="password"
         placeholder="Your Password"
         className="bg-slate-200 p-2 rounded mt-2 w-full"
       ></input>

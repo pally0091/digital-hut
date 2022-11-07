@@ -8,6 +8,7 @@ const Login = () => {
       <br />
       <input
         type="email"
+        name="email"
         placeholder="Your Email"
         className="bg-slate-200 p-2 rounded mt-2 w-full"
       ></input>
@@ -15,13 +16,14 @@ const Login = () => {
       <br />
       <input
         type="password"
+        name="password"
         placeholder="Your Password"
         className="bg-slate-200 p-2 rounded mt-2 w-full"
       ></input>
       <br />
       <br />
       <div className="w-1/2 mx-auto">
-        <button className="text-center w-full font-bold bg-sky-600 p-2 rounded hover:bg-lime-400">
+        <button type="submit" className="text-center w-full font-bold bg-sky-600 p-2 rounded hover:bg-lime-400">
           Login
         </button>
       </div>
