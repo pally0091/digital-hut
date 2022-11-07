@@ -21,7 +21,7 @@ const About = () => {
             cursorStyle="<<-"
             typeSpeed={70}
             delaySpeed={1500}
-            deleteSpeed={100}
+            deleteSpeed={90}
           ></Typewriter>
         </p>
 
