@@ -49,6 +49,7 @@ const Header = () => {
             HUT
           </span>
         </Link>
+
         <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">
           <li>
             <Link
@@ -71,6 +72,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+
         <div className="ml-auto lg:hidden">
           <button
             aria-label="Open Menu"
@@ -107,7 +109,6 @@ const Header = () => {
                       title="Company"
                       className="inline-flex items-center"
                     >
-                      
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         Digital Hut
                       </span>

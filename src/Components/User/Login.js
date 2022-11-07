@@ -1,7 +1,20 @@
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
+import app from "../../firebaseConfig";
 
 const Login = () => {
+  const auth =getAuth(app);
+  const gProvider = new GoogleAuthProvider();
+
+  const googleLoginHandler = ()=> {
+    signInWithPopup(auth, gProvider)
+      .then((result) => {
+        const user = result.user
+        console.log(user)
+      })
+      .catch((err) => console.error(err))
+  }
   return (
     <div className="bg-white lg:w-1/3 sm:w-full md:w-1/2  mx-auto rounded p-5 mt-20">
       <h1 className="text-xl font-bold ">Login ...</h1>
@@ -35,7 +48,7 @@ const Login = () => {
       </p>
       <p>Login with </p>
       <div className="flex justify-evenly mt-2">
-        <button className="bg-white shadow-md rounded hover:bg-green-600 p-2 w-1/3 ">
+        <button onClick={googleLoginHandler} className="bg-white shadow-md rounded hover:bg-green-600 p-2 w-1/3 ">
           Google
         </button>
         <button className="bg-white shadow-md rounded hover:bg-blue-600 p-2 w-1/3 ">
