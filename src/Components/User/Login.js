@@ -1,7 +1,7 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
-import app from "../../firebaseConfig";
+import app from "../../firebase.config";
 
 const Login = () => {
   const auth =getAuth(app);
